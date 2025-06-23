@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maria Alrasheedi - CV</title>
+  <style>
+    :root {
+      --bg-color: #f0f0f0;
+      --text-color: #333333;
+      --accent-color: #ffb0df;
+      --section-bg: #ffffff;
+    }
+
+    [data-theme="dark"] {
+      --bg-color: #121212;
+      --text-color: #eeeeee;
+      --accent-color: #7c3e63;
+      --section-bg: #1e1e1e;
+    }
+    h1 {
+      font-family: cursive;
+      font-size: 45px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Gill Sans", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: all 0.3s ease;
+    }
+
+    header {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: var(--section-bg);
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav .links a {
+      margin: 0 10px;
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav .links a:hover {
+      color: var(--accent-color);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .section {
+      background: var(--section-bg);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    h2 {
+      color: var(--accent-color);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact {
+      font-size: 0.95em;
+      margin-top: 10px;
+    }
+
+    .toggle-theme {
+      background: var(--accent-color);
+      color: rgb(255, 255, 255);
+      border: none;
+      font-size: 20px;
+      padding: 8px 12px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .toggle-theme:hover {
+      background: #8d4e74;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 16px;
+      font-size: 20px;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      z-index: 999;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav .links {
+        margin-top: 10px;
+      }
+      .toggle-theme {
+        align-self: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button class="toggle-theme" id="themeToggle">☾</button>
+    <div class="links">
+      <a href="#summary">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#languages">Languages</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Maria Alrasheedi</h1>
+    <p class="contact">Email: mariamomo200424@gmail.com | Phone: +966 547923846 | Location: Arrass, Qassim</p>
+  </header>
+
+  <div class="container">
+    <div id="summary" class="section">
+      <h2>Professional Summary</h2>
+      <p>My name is Maria Alrasheedi, and I’m currently studying Information Technology at Qassim University. I have a strong interest in software development, data management, and creating practical tech solutions that make an impact. I enjoy learning new tools and technologies, and I’m always looking for opportunities to grow both technically and personally. I work well in teams, take initiative, and am passionate about turning ideas into real, working systems.
+</p>
+    </div>
+
+ <div id="experience" class="section">
+  <h2>Experience</h2>
+  <ul>
+    <li>
+      <strong>Student Developer</strong> <br>
+      <em>Qassim University – Jan 2024 to Present</em>
+      <ul>
+        <li>Worked on multiple course-based projects involving system analysis, database design, and front-end development</li>
+        <li>Collaborated with peers to develop a shopping list mobile app using SwiftUI</li>
+        <li>Designed and implemented SQL queries for a university project involving data retrieval and reporting</li>
+        <li>Participated in team-based assignments, applying Agile methods and using Git/GitHub for version control</li>
+      </ul>
+    </li>
+
+    <li>
+      <strong>Freelance Tech Support (Part-time)</strong> <br>
+      <em>Remote – 2023 to Present</em>
+      <ul>
+        <li>Assisted students with basic tech troubleshooting and software setup</li>
+        <li>Provided guidance on productivity tools such as Google Workspace and Microsoft Office</li>
+        <li>Helped beginners understand how to use learning platforms and code editors effectively</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+    <div id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Bachelor of Information Technology</strong> – Qassim University – Qassim, Saudi Arabia
+2021 – Present (Expected Graduation: 2026)
+</li>
+      </ul>
+    </div>
+
+
+<div id="projects" class="section">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Shell Scripts & Linux Server Configuration</strong>  
+      <br>
+      Developed automated shell scripts and configured Linux servers for system administration tasks such as user management, file permissions, and scheduled backups.
+    </li>
+    <li>
+      <strong>Secure Online Banking Application</strong>  
+      <br>
+      Designed and prototyped a secure online banking system with multi-factor authentication, encrypted transactions, and user role-based access control.
+    </li>
+    <li>
+      <strong>Grocery Store Management System</strong>  
+      <br>
+      Created a digital system to manage inventory, track sales, handle customer data, and generate real-time reports for a grocery store.
+    </li>
+    <li>
+      <strong>Printer Simulator</strong>  
+      <br>
+      Built a desktop application simulating print queue management, handling concurrent tasks using multithreading and priority scheduling techniques.
+    </li>
+    <li>
+      <strong>Mental Health Support Expert System</strong>  
+      <br>
+      Developed a rule-based expert system that provides mental health advice and guidance based on user-input symptoms and emotional states.
+    </li>
+    <li>
+      <strong>Mulida – Qassim University Library Database</strong>  
+      <br>
+      Designed and implemented a relational database system to manage the university’s library resources, including books, authors, borrow/return tracking, and user accounts.
+    </li>
+  </ul>
+</div>
+
+<div id="languages" class="section">
+  <h2>Languages</h2>
+  <ul>
+    <li>
+      <strong>Arabic – Native Speaker</strong><br>
+      Full professional proficiency in reading, writing, and speaking. Able to communicate complex ideas effectively in formal and informal settings.
+    </li>
+    <li>
+      <strong>English – Fluent</strong><br>
+      Excellent command of English in both academic and professional contexts, including technical writing, presentations, and collaboration with international teams.
+    </li>
+  </ul>
+</div>
+
+    <div id="skills" class="section">
+      <h2 style="text-align:center; font-size: 28px; margin-bottom: 30px; color: var(--accent-color);">
+        Skills
+      </h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+        <!-- Technical Expertise -->
+        <div style="flex: 1 1 280px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #ffb0df;">𐙚⋆° Social Skills</h3>
+          <ul>
+            <li>Excellent communication and active listening</li>
+            <li>Team collaboration and conflict resolution</li>
+            <li>Empathy and adaptability in diverse environments</li>
+            <li>Leadership with a positive and motivating attitude</li>
+          </ul>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div style="flex: 1 1 280px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #ffb0df;">ᯤ Programming Languages</h3>
+          <ul>
+            <li>Java</li>
+            <li>Java Script</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>C</li>
+          </ul>
+        </div>
+
+        <!-- Core Competencies -->
+        <div style="flex: 1 1 280px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #ffb0df;">➤ Familiar with</h3>
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>Xcode</li>
+            <li>NetBeans</li>
+            <li>SQL pro studio</li>
+          </ul>
+        </div>
+         <div style="flex: 1 1 280px; background: rgba(255,255,255,0.02); padding: 20px; border-radius: 10px;">
+          <h3 style="color: #ffb0df;">✦ Operating Systems Used for Development</h3>
+          <ul>
+            <li>macOS</li>
+            <li>Linux (Ubuntu)</li>
+            <li>Windows</li>
+            <li>iOS (Simulator/Devices)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop">↑</button>
+
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const backToTop = document.getElementById('backToTop');
+
+    function setTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      themeToggle.textContent = theme === 'dark' ? '☀︎' : '☾';
+    }
+
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      setTheme(newTheme);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      setTheme(savedTheme);
+    });
+
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 400 ? 'block' : 'none';
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
